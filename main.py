@@ -8,7 +8,7 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker,
 from sqlalchemy import create_engine, select
 
 # ---------- SQLAlchemy setup ----------
-DATABASE_URL = "sqlite:////var/data/movies.db"  # <- шлях на диску Render
+DATABASE_URL = "sqlite:///./movies.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
