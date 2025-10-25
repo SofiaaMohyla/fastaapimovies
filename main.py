@@ -132,4 +132,4 @@ def delete_movie(movie_id: int, db: Session = Depends(get_db)):
     return None
 
 
-uvicorn.run(app)
+#uvicorn.run(app)
